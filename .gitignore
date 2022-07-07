@@ -2,6 +2,6 @@
 /venv
 
 # Chromedriver for scraping
-datasetBuilder/imageScraping/chromedriver.exe
+datasetBuilder/chromedriver.exe
 
 /dataset
