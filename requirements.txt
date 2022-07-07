@@ -1,5 +1,6 @@
 tensorflow
-numpy==1.19.2
+numpy
 matplotlib
 opencv-python
 jupyterlab
+google-images-download

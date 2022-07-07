@@ -1,1 +1,7 @@
-/imageScraping/chromedriver.exe
+# Locally setup virtual environment
+/venv
+
+# Chromedriver for scraping
+datasetBuilder/imageScraping/chromedriver.exe
+
+/dataset
