@@ -1,5 +1,0 @@
-tensorflow
-numpy==1.19.2
-matplotlib
-opencv-python
-jupyterlab
