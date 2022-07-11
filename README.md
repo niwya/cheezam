@@ -4,7 +4,7 @@
 ___
 
 ### Download the dataset
-Find the preprocessed 5-cheeses dataset [here](https://cheezam.s3.us-east-2.amazonaws.com/Cheezam_dataset.zip).
+Find the preprocessed 5-cheeses dataset [here](https://cheezam.s3.us-east-2.amazonaws.com/Cheezam_dataset.zip). All images are in 256 by 256 pixels `png` format. 
 
 ___
 
@@ -29,7 +29,10 @@ This folder contains the scripts to scrape and rename the images that I used to 
 This folder contains the scripts to preprocess the images that I used to build the cheese dataset. It just renames all the files in a folder with the template `prefix_number` with `prefix` a prefix of choice and `number` the number of the image in the folder starting from 0.
 
 #### The preprocessing script
-[TO COME]
+This script lets you choose a provenance folder, and preprocess all desired subfolder in that provenance folder, then save it to some destination folder of your choice, such that:
+- Processed images are in `png` format
+- Processed images are 256 by 256 pixels
+To enforce these bullet points, the initial images are cropped and resized. It is assumed that the images in the provenance folder have their object of interest centered in the frame, so that the cropping operations yields good results. 
 ___
 
 ### The cheese_classifier script
