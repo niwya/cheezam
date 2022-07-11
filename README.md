@@ -19,11 +19,11 @@ ___
 
 ### The datasetBuilder folder
 #### The image_scraper script
-This folder contains the scripts to scrape and rename the images that I used to build the cheese dataset. If you do run the `image_scraper` script with a query for *keyword*, the images will be downloaded in `./downloads/keyword` folder.
+This folder contains the scripts to scrape and rename the images that I used to build the cheese dataset. If you do run the `image_scraper` script with a query for *keyword*, the images will be downloaded in `./downloads/keyword` folder. 
 
 **Important:** to use the `image_scraper`, you will need to download a [chromedriver](https://chromedriver.chromium.org/downloads), whose version will depend on your version of Google Chrome. Please save the chromedriver in a location of your choice, add it to your PATH and modify the `chromedriver_path` in the file with the **absolute path** to your chromedriver. The `image_scraper` script only supports scraping images in Google Images using the Google Chrome browser. 
 
-**Important 2:** at this time, there are issues with the downloading process. 
+**Important 2:** at this time, there are issues with the downloading process and the google-images-download package. This might be because the Chrome browser has changed how it handles image queries. Please refer directly to the package documentation. 
  
 #### The file_renamer script
 This folder contains the scripts to preprocess the images that I used to build the cheese dataset. It just renames all the files in a folder with the template `prefix_number` with `prefix` a prefix of choice and `number` the number of the image in the folder starting from 0.
